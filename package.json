@@ -1,0 +1,35 @@
+{
+  "name": "simple-cloud-storage-frontend",
+  "version": "1.0.0",
+  "description": "A simple, elegant file upload interface for personal cloud storage",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kartikshirode/simple-cloud-storage-frontend"
+  },
+  "keywords": [
+    "file-upload",
+    "cloud-storage",
+    "frontend",
+    "drag-drop",
+    "responsive"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "config": {
+    "backend": {
+      "url": "https://your-storage-backend.herokuapp.com",
+      "endpoints": {
+        "upload": "/upload",
+        "list": "/files",
+        "download": "/download"
+      }
+    }
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
