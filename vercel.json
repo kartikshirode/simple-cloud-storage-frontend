@@ -1,17 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -21,7 +8,7 @@
           "value": "DENY"
         },
         {
-          "key": "X-Content-Type-Options",
+          "key": "X-Content-Type-Options", 
           "value": "nosniff"
         }
       ]
