@@ -1,5 +1,7 @@
-// Configuration - Update this URL when you deploy your backend
-const BACKEND_URL = 'http://localhost:3000'; // Replace with your deployed backend URL
+// Configuration - Backend URL
+const BACKEND_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:3000'  // Local development
+    : 'https://your-backend-app.railway.app'; // Production backend URL (update this after deploying backend)
 
 class FileUploader {
     constructor() {

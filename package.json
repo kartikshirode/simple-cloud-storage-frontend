@@ -18,7 +18,9 @@
   "license": "MIT",
   "scripts": {
     "start": "python -m http.server 8000",
-    "dev": "python -m http.server 8000"
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod"
   },
   "config": {
     "backend": {
